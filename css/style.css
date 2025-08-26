@@ -1,0 +1,975 @@
+:root {
+    --balson-white: #FFFFFF;
+    --balson-blue: #B1E3FA;
+    --balson-navy: #19105F;
+    --balson-red: #E85B45;
+    --balson-cream: #F1EACE;
+    --font-underground-regular: 'UnderGround-Regular';
+    --font-underground-heavy: 'UnderGround-Heavy';
+    --font-underground-medium: 'UnderGround-Medium';
+}
+
+@font-face {
+    font-family: 'UnderGround-Regular';
+    src: url('../fonts/underground-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UnderGround-Heavy';
+    src: url('../fonts/underground-heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UnderGround-Medium';
+    src: url('../fonts/underground-medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+.btn-primary,
+.btn-primary:hover {
+    color: var(--balson-white);
+    background-color: var(--balson-navy);
+    border-color: var(--balson-navy);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: var(--font-underground-medium);
+}
+
+.btn-light,
+.btn-light:hover {
+    color: var(--balson-navy);
+    background-color: transparent;
+    border-color: var(--balson-navy);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: var(--font-underground-medium);
+}
+
+.btn-medium {
+    font-family: var(--font-underground-medium);
+}
+
+.border-right {
+    border-right: 1px solid var(--balson-navy) !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--balson-navy) !important;
+}
+
+.border-left {
+    border-left: 1px solid var(--balson-navy) !important;
+}
+
+.border-top {
+    border-top: 1px solid var(--balson-navy) !important;
+}
+
+/* Main Menu */
+.main-page .tob-bar {
+    color: var(--balson-navy);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: var(--font-underground-medium);
+    letter-spacing: 0.1em;
+    background-color: var(--balson-blue);
+    padding: 16px 0;
+    text-align: center;
+}
+
+.main-page .container-fliud {
+    --bs-gutter-x: 2.25rem;
+}
+
+.main-menu {
+    background-color: var(--balson-white);
+    padding: 28px 0;
+}
+
+.main-menu.home-menu {
+    background: rgba(241, 234, 206, 1);
+    background: linear-gradient(90deg, rgba(255, 255, 255, .75) 0%, rgba(241, 234, 206, 1) 100%);
+}
+
+.main-menu .logo {
+    width: 235px;
+    height: 81px;
+}
+
+.main-menu .cart {
+    height: 41px;
+    width: 44px;
+}
+
+.main-menu .nav-link {
+    color: var(--balson-navy);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: var(--font-underground-heavy);
+    letter-spacing: 0.1em;
+    margin-right: 12px;
+}
+
+.main-menu .navbar-toggler {
+    border: 0;
+}
+
+.main-menu .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-menu .navbar-nav.navbar-nav-left {
+    margin-right: auto;
+}
+
+.main-menu .navbar-nav.navbar-nav-right {
+    margin-left: auto;
+}
+
+/* Home Page */
+.home-page .hero-banner {
+    background: rgba(241, 234, 206, 1);
+    background: linear-gradient(90deg, rgba(255, 255, 255, .75) 0%, rgba(241, 234, 206, 1) 100%);
+    border-bottom: 1px solid var(--balson-navy);
+}
+
+.home-page .hero-banner .heading {
+    color: var(--balson-navy);
+    font-size: 36px;
+    font-family: var(--font-underground-heavy);
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 20ch;
+    display: inline-block;
+}
+
+.home-page .hero-banner .desc {
+    color: var(--balson-navy);
+    font-size: 20px;
+    font-family: var(--font-underground-heavy);
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 36ch;
+    display: inline-block;
+}
+
+.home-page .banger-style-details {
+    text-align: center;
+}
+
+.home-page .banger-style-details .heading {
+    color: var(--balson-navy);
+    font-size: 36px;
+    font-family: var(--font-underground-heavy);
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home-page .banger-style-details .desc-heavy {
+    color: var(--balson-navy);
+    font-size: 20px;
+    font-family: var(--font-underground-heavy);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.home-page .banger-style-details .desc {
+    color: var(--balson-navy);
+    font-size: 20px;
+    font-family: var(--font-underground-regular);
+    text-align: center;
+}
+
+.home-page .banger-style-details .icons .icon .icon-img {
+    height: 65px;
+    width: 65px;
+    object-fit: contain;
+}
+
+.home-page .banger-style-details .icons .icon .desc {
+    color: var(--balson-navy);
+    font-size: 20px;
+    font-family: var(--font-underground-regular);
+    text-align: center;
+}
+
+.home-page .banger-style-details .free-shipping .heading {
+    color: var(--balson-navy);
+    font-size: 17px;
+    font-family: var(--font-underground-heavy);
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+}
+
+.home-page .banger-style-details .free-shipping {
+    display: inline-block;
+}
+
+.home-page .banger-style-details .free-shipping .dropdown {
+    margin-bottom: 16px;
+
+}
+
+.home-page .banger-style-details .free-shipping .btn-learn {
+    color: var(--balson-navy);
+    font-size: 17px;
+    font-family: var(--font-underground-heavy);
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+}
+
+.home-page .craftmanship-banner {
+    position: relative;
+}
+
+.home-page .craftmanship-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0),
+            /* top - 20% opacity black */
+            rgba(0, 0, 0, 0.2)
+            /* bottom - 60% opacity black */
+        );
+}
+
+.home-page .craftmanship-banner .desc {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    /* distance from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: var(--font-underground-heavy);
+}
+
+.home-page .craftmanship .craftmanship-details .heading {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: var(--font-underground-heavy);
+    color: var(--balson-navy);
+    text-align: center;
+}
+
+.home-page .craftmanship .craftmanship-details .desc-heavy {
+    font-family: var(--font-underground-heavy);
+    color: var(--balson-navy);
+    text-align: center;
+    margin-top: 16px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.home-page .craftmanship .craftmanship-details .desc {
+    font-family: var(--font-underground-regular);
+    color: var(--balson-navy);
+    text-align: center;
+    font-size: 17px;
+}
+
+.home-page .craftmanship .craftmanship-details .craftman-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.home-page .craftmanship .craftmanship-details .craftman-btn .btn {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.home-page .breakfast {
+    margin: 36px;
+}
+
+.home-page .breakfast .heading {
+    font-family: var(--font-underground-heavy);
+    color: var(--balson-navy);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 36px;
+}
+
+.home-page .breakfast .breakfast-card-img {
+    min-height: 450px;
+    height: 420px;
+}
+
+.home-page .breakfast .breakfast-card-img .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-page .breakfast .breakfast-card .heading {
+    font-family: var(--font-underground-medium);
+    color: var(--balson-navy);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.home-page .breakfast .breakfast-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.home-page .breakfast .breakfast-btn .btn {
+    width: 100%;
+
+}
+
+.home-page .breakfast .breakfast-btn .btn:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+/* Story Page */
+.story-page .craftmanship .craftmanship-details .desc-heavy {
+    margin-bottom: 16px;
+}
+
+.story-page .craftmanship .craftmanship-details .desc {
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.story-page .craftmanship-banner .sub-desc {
+    font-size: 15px;
+    font-family: var(--font-underground-medium);
+}
+
+.story-page .timeline-details .craftmanship-details .desc-heavy {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.story-page .timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+.story-page .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: var(--balson-navy);
+    transform: translateX(-50%);
+}
+
+.story-page .timeline::after,
+.story-page .timeline::before {
+    z-index: 0;
+}
+
+.story-page .timeline-start,
+.story-page .timeline-end {
+    width: 12px;
+    height: 12px;
+    background-color: var(--balson-navy);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.story-page .timeline-start {
+    top: 0;
+}
+
+.story-page .timeline-end {
+    bottom: 0;
+}
+
+.story-page .timeline-item {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.story-page .timeline-item .content {
+    width: 50%;
+    position: relative;
+}
+
+.story-page .timeline-item .content h5 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.story-page .timeline-item .content p {
+    font-size: 15px;
+}
+
+.story-page .timeline-item.left .content::before,
+.story-page .timeline-item.right .content::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--balson-navy);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.story-page .timeline-item.left .content::before {
+    transform: translateX(50%);
+}
+
+.story-page .timeline-item.right .content::before {
+    left: 0;
+}
+
+.story-page .timeline-item.left .content {
+    text-align: right;
+    padding-right: 15px;
+    color: var(--balson-blue);
+}
+
+.story-page .timeline-item.right .content {
+    text-align: left;
+    padding-left: 15px;
+    margin-left: auto;
+}
+
+.story-page .timeline-details .craftmanship-details {
+    padding: 48px 0;
+}
+
+/* Receipes Page */
+.receipes-page .receipes {
+    padding: 36px 0;
+}
+
+.receipes-page .receipes .receipe {
+    margin-bottom: 36px;
+}
+
+.receipes-page .receipes .receipe .heading {
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.receipes-page .craftmanship {
+    padding: 36px 0;
+}
+
+/* Receipe Details Page */
+.receipe-details-page .craftmanship .receipe-details .heading {
+    font-size: 36px;
+}
+
+.receipe-details-page .craftmanship .receipe-details .desc-heavy {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.receipe-details-page .banger-style {
+    padding: 39px 0;
+}
+
+.receipe-details-page .receipe-info .craftmanship-details .desc-heavy {
+    font-size: 17px;
+    text-align: left;
+}
+
+.receipe-details-page .receipe-info .craftmanship-details .desc {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.receipe-details-page .craftmanship .craftmanship-details .craftman-btn {
+    margin-left: 0;
+}
+
+.receipe-details-page .craftmanship .receipe-details-right .receipe-list {
+    padding-left: 16px;
+}
+
+.receipe-details-page .craftmanship .receipe-details-right .desc {
+    margin-top: 16px;
+}
+
+/* Wholesale Page */
+.wholesale-page .craftmanship .wholesale-details .heading {
+    margin-bottom: 36px;
+}
+
+.wholesale-page .craftmanship .wholesale-details .desc {
+    margin: 0;
+}
+
+/* Contact Page */
+.contact-page .contact-form {
+    padding: 48px 0;
+}
+
+.contact-page .contact-form .form-control {
+    border: 1px solid var(--balson-navy);
+    color: var(--balson-navy);
+    font-size: 20px;
+    font-family: var(--font-underground-medium);
+}
+
+.contact-page .contact-form .form-control::placeholder {
+    color: var(--balson-navy);
+}
+
+.contact-page .contact-form textarea {
+    min-height: 380px;
+}
+
+/* Family Table */
+.family-table {
+    background-color: var(--balson-blue);
+    padding: 48px 0;
+    text-align: center;
+    border-top: 1px solid var(--balson-navy);
+    border-bottom: 1px solid var(--balson-navy);
+}
+
+.family-table .heading {
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    color: var(--balson-navy);
+    text-transform: uppercase;
+    font-family: var(--font-underground-heavy);
+}
+
+.family-table .desc {
+    font-size: 20px;
+    color: var(--balson-navy);
+    font-family: var(--font-underground-medium);
+}
+
+.family-table .input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.family-table .form-control {
+    flex: 1;
+    /* takes all remaining space */
+    min-width: 0;
+    /* prevent overflow in flexbox */
+    text-align: center;
+    color: var(--balson-navy);
+    background-color: transparent;
+    border-color: var(--balson-navy);
+    box-shadow: none;
+    max-width: calc(100% - 225px);
+}
+
+.family-table .form-control::placeholder {
+    text-align: center;
+    color: var(--balson-navy);
+}
+
+.family-table .btn {
+    flex-shrink: 0;
+    /* keeps button width fixed */
+}
+
+/* footer */
+.footer {
+    padding: 46px 0 0;
+}
+
+.footer .footer-menu .nav-link {
+    color: var(--balson-navy);
+    font-size: 17px;
+    font-family: var(--font-underground-medium);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.footer .hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.footer .hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 230px;
+}
+
+.footer .footer-logo {
+    width: 165px;
+    height: 161px;
+}
+
+.footer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0),
+            /* top - 20% opacity black */
+            rgba(0, 0, 0, 0.4)
+            /* bottom - 60% opacity black */
+        );
+}
+
+.footer .overlay .desc {
+    font-family: var(--font-underground-medium);
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    color: var(--balson-white);
+}
+
+.footer .overlay .heading {
+    font-family: var(--font-underground-heavy);
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    color: var(--balson-white);
+}
+
+.footer .footer-icons {
+    height: 151px;
+    width: 151px;
+    margin-right: 36px;
+}
+
+@media (max-width: 991px) {
+    .main-menu .navbar-brand {
+        position: static;
+        transform: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-page .tob-bar {
+        font-size: 14px;
+    }
+
+    .main-menu {
+        padding: 14px 0;
+    }
+
+    .main-menu .logo {
+        width: 164px;
+    }
+
+    /* Home Page */
+    .home-page .hero-banner .heading {
+        font-size: 20px;
+    }
+
+    .home-page .hero-banner .desc {
+        font-size: 14px;
+    }
+
+    .home-page .hero-banner .hero-banner-mobile {
+        position: relative;
+    }
+
+    .home-page .hero-banner .hero-banner-mobile-btn {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .home-page .hero-banner .hero-banner-mobile-btn .btn-primary {
+        min-width: 145px;
+    }
+
+    .home-page .banger-style-details {
+        margin: 36px 0;
+    }
+
+    .home-page .banger-style-details .heading {
+        font-size: 20px;
+    }
+
+    .home-page .banger-style-details .desc-heavy {
+        font-size: 14px;
+    }
+
+    .home-page .banger-style-details .desc {
+        font-size: 14px;
+        max-width: 40ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-page .banger-style-details .icons .icon .icon-img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .home-page .banger-style-details .icons .icon .desc {
+        font-size: 14px;
+    }
+
+    .home-page .banger-style-details .free-shipping .heading {
+        font-size: 14px;
+    }
+
+    .home-page .banger-style-details .free-shipping .dropdown {
+        margin-bottom: 8px;
+    }
+
+    .home-page .banger-style-details .free-shipping .btn-primary {
+        font-size: 14px;
+    }
+
+    .home-page .banger-style-details .free-shipping .btn-learn {
+        font-size: 14px;
+    }
+
+    .home-page .craftmanship-banner .desc {
+        font-size: 13px;
+        max-width: 30ch;
+    }
+
+    .home-page .craftmanship .craftmanship-details {
+        margin: 36px 0;
+    }
+
+    .home-page .craftmanship .craftmanship-details .heading {
+        font-size: 20px;
+    }
+
+    .home-page .craftmanship .craftmanship-details .desc-heavy {
+        font-size: 14px;
+        max-width: 30ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-page .craftmanship .craftmanship-details .desc {
+        font-size: 14px;
+        max-width: 40ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-page .craftmanship .craftmanship-details .craftman-btn .btn {
+        max-width: 80%;
+    }
+
+    .home-page .breakfast .heading {
+        font-size: 17px;
+        max-width: 20ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-page .breakfast .breakfast-card .heading {
+        font-size: 14px;
+        max-width: 18ch;
+    }
+
+    /* Story Page */
+    .story-page .craftmanship .craftmanship-details .heading {
+        margin-bottom: 36px;
+    }
+
+    .story-page .craftmanship .craftmanship-details .desc {
+        margin-top: 36px;
+        max-width: 50ch;
+    }
+
+    .story-page .timeline-details .craftmanship-details .heading {
+        margin-bottom: 0;
+    }
+
+    .home-page .timeline-details .craftmanship-details {
+        margin: 0;
+    }
+
+    /* Receipes Page */
+    .receipes-page .receipes .desc-heavy {
+        margin-bottom: 16px;
+    }
+
+    .receipes-page .banger-style-details {
+        margin: 20px 0;
+    }
+
+    .receipes-page .receipes .receipe .heading {
+        font-size: 14px;
+    }
+
+    .receipes-page .receipes .receipe {
+        margin-bottom: 0;
+    }
+
+    /* Receipe Details */
+    .receipe-details-page .craftmanship .craftmanship-details .heading {
+        margin-bottom: 0;
+    }
+
+    .receipe-details-page .craftmanship .craftmanship-details .desc {
+        margin-top: 16px;
+    }
+
+
+    .receipe-details-page .receipe-info .border-right {
+        border-right: 0 !important;
+    }
+
+    .receipe-details-page .receipe-info .craftmanship-details {
+        padding: 0 0 36px;
+        margin: 0;
+    }
+
+    .receipe-details-page .receipe-info .border-bottom-mobile {
+        border-bottom: 1px solid var(--balson-navy);
+    }
+
+    .receipe-details-page .receipe-info .craftmanship-details .desc-heavy {
+        margin-left: 16px;
+    }
+
+    .receipe-details-page .receipe-info .craftmanship-details .desc {
+        margin-top: 0;
+    }
+
+    .receipe-details-page .receipe-info .craftmanship-details .desc-heavy {
+        max-width: 100%;
+    }
+
+    .receipe-details-page .craftmanship .craftmanship-details .craftman-btn {
+        max-width: 100%;
+
+    }
+
+    .receipe-details-page .craftmanship .craftmanship-details .craftman-btn .btn {
+        max-width: 95%;
+    }
+
+    .receipe-details-page .receipe-info .receipe-details-right {
+        padding: 36px 0;
+    }
+
+    /* Contact Page */
+    .contact-page .craftmanship .craftmanship-details .desc {
+        margin-top: 0;
+    }
+
+    .contact-page .contact-form {
+        padding: 0;
+    }
+
+    .contact-page .contact-form .btn-primary {
+        width: 100%;
+    }
+
+    .contact-page .craftmanship .craftmanship-details {
+        margin-bottom: 0;
+    }
+
+    /* Family Table */
+
+    .family-table .input-wrapper {
+        display: block;
+    }
+
+    .family-table .heading {
+        font-size: 20px;
+        max-width: 20ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .family-table .desc {
+        font-size: 14px;
+    }
+
+    .family-table .form-control {
+        max-width: initial;
+    }
+
+    .family-table .btn-primary {
+        width: 100%;
+    }
+
+    .footer .footer-logo {
+        width: 63px;
+        height: auto;
+    }
+
+    .footer .hero-bg {
+        margin-top: 150px;
+    }
+
+    .footer .footer-icons {
+        height: 65px;
+        width: 65px;
+    }
+
+    .footer .overlay .heading {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .footer .overlay .desc {
+        font-size: 14px;
+        max-width: 30ch;
+        margin-bottom: 0;
+    }
+}
